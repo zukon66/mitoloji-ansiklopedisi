@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yunan Mitolojisi Ansiklopedisi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Yunan Mitolojisi Ansiklopedisi</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Karakter ara...">
+            <button id="toggle-family-tree" class="toggle-button">Soy Ağacını Göster</button>
+        </div>
+    </header>
+    
+    <main id="character-gallery">
+        <!-- Karakter kartları JavaScript tarafından buraya eklenecek -->
+    </main>
+
+    <!-- Modal Yapısı -->
+    <div id="character-modal" class="modal-backdrop">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modal-img" src="" alt="Karakter Resmi">
+            <h2 id="modal-name"></h2>
+            <div id="modal-body">
+                <h3>Semboller</h3>
+                <ul id="modal-symbols"></ul>
+                <h3>Detaylar</h3>
+                <p id="modal-details"></p>
+            </div>
+        </div>
+    </div>
+
+    <section id="family-tree-section" class="hidden-section">
+        <h2>Soy Ağacı</h2>
+        <div id="family-tree-container">
+            <!-- Soy ağacı JavaScript tarafından buraya eklenecek -->
+        </div>
+        <div id="selected-character-info">
+            <h3>Seçilen Karakter Bilgisi</h3>
+            <p id="character-position"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <button id="back-to-top" title="Yukarı Çık"></button>
+    <footer>
+        <p>&copy; 2025 Yunan Mitolojisi Ansiklopedisi. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
